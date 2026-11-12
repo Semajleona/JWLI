@@ -1,76 +1,130 @@
-*{border-box: box-sizing; text-decoration: none;}
 
-header{
-  width:100%;
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-nav ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  }
- li a {
-   font-size: 14px; 
-   text-decoration: none;
-   color: #151F2B;
- }
-.navbtn{border: 1px solid #151F2B;
-  width: 80px;
-        color: white;
-        background-color: #151F2B;
-  margin-right: 35px;
+body {
+    margin: 0;
+    padding: 0;
+    color: #151F2B;
 }
 
-.hero{ background-image: url("/Untitled design _2_.png");
-        background-repeat: no-repeat;
-       background-size: cover;
-       background-color: lightgray;
-       color: gray;
-       padding-top: 80px;
-
-     }
-
-.herosection1 { 
- margin-top: 120px;
-  margin-left: 30px;
-  padding-bottom: 20px;
-width: 50%;
-}
-  
-
-h1{ font-weight; normal;
-  font-size: 30px;
-  }
-h1,h2,h3{font-family: lato;}
-
-.herosection1 p{
-  font-size: 20px;
-}
-.herosection2 {  
-margin-left: 30px;
-  padding-bottom: 20px;
-width: 50%;}
-.herosection2 p{ 
-  font-size: 14px;}
-
-form{display: flex; gap: 10px;}
-input{ 
-  height: 30px;
-       width: 250px;}
-
-.herobtn{
-  height: 36px;
-       width: 100px;
-  float: left;
+h1, h2, h3 {
+    font-family: Lato, sans-serif;
 }
 
-.empowering{   
+h1 {
+    font-weight: normal;
+    font-size: 30px;
+}
 
-           
-  padding-bottom:0;         
- width: 100%;
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+
+/* =========================
+   HEADER AND NAVIGATION
+========================= */
+
+header {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #151F2B;
+}
+
+.navbtn {
+    border: 1px solid #151F2B;
+    width: 80px;
+    color: white;
+    background-color: #151F2B;
+    margin-right: 35px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background-image: url("/Untitled design _2_.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: lightgray;
+    color: gray;
+    padding-top: 80px;
+}
+
+.herosection1 {
+    margin-top: 120px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.herosection1 p {
+    font-size: 20px;
+}
+
+.herosection2 {
+    margin-left: 30px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.herosection2 p {
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+}
+
+.herobtn {
+    height: 36px;
+    width: 100px;
+}
+
+
+/* =========================
+   EMPOWERING SECTION
+========================= */
+
+.empowering {
+    width: 100%;
     min-height: 100vh;
+    padding: 40px 20px;
 
     display: flex;
     flex-direction: column;
@@ -79,270 +133,571 @@ input{
 
     text-align: center;
     color: #151F2B;
-           
 }
 
-
-
-h2{text-align: center;
-  width: 50%;
-    padding-bottom: 20px;
- }
-
-.empoweringbottom{
-  display: flex;
-                  flex-direction:row;
-                  justify-content: center;
-  
+.empowering h2 {
+    width: 50%;
 }
 
-.empoweringp1 { height: 100px;
-               width: 30%;
- float: left;}
-
-.empoweringp1 span{
-  font-weight: bold;}
-
-.empoweringp2 span{
-  font-weight: bold;}
-
-.empoweringp2 { 
-  height: 100px;
- width: 30%;
- float: left;
-}
-
-.boston {width: 50%; 
-}
-
-.ourhistory{
-  width: 100%;
-display: flex;
+.empoweringbottom {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;  
+    gap: 30px;
+}
+
+.empoweringp1,
+.empoweringp2 {
+    width: 30%;
+    min-height: 100px;
+}
+
+.empoweringp1 span,
+.empoweringp2 span {
+    font-weight: bold;
+}
+
+.boston {
+    width: 50%;
+}
+
+
+/* =========================
+   OUR STORY SECTION
+========================= */
+
+.ourstory {
+    width: 100%;
+    padding: 60px 20px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
     color: #151F2B;
- }
-
-.history h2{
-            text-align: left;
-  font-size: 20px; 
-  font-weight: bold;
 }
+
+.ourstory h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.ourstory p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   OUR HISTORY SECTION
+========================= */
+
+.ourhistory {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    color: #151F2B;
+}
+
 .history {
-  width: 30%;
+    width: 30%;
 }
 
-.ourhistoryphotos { margin-top:75px;
-  width: 30%; }
+.history h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-figcaption{text-align: center;}
+.ourhistoryphotos {
+    margin-top: 75px;
+    width: 30%;
+}
+
+.ourhistoryphotos img {
+    width: 320px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+}
 
 
-.ourhistoryphotos img{ height: 250px;
-                      width: 320px;}
+/* =========================
+   WHO WE ARE SECTION
+========================= */
 
-
-.whowearesection{width: 100%;
-                 padding-top: 70px; 
-                }
+.whowearesection {
+    width: 100%;
+    padding-top: 70px;
+}
 
 .whowearesection h2 {
-  text-align: center;
-}
- 
-.whoweare {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.whoweare span{font-weight:bold;}
-
-
-.whoweareimg{ width: 20%;}
-.whowearep{width: 40%;}
-
-.familyandfoundation{ display: flex;
-                      flex-direction: row;
-                      justify-content: center;
-                      align-content: center;
-                      gap: 20px;
-                      padding-top: 30px;
-                    }
-
-
-
-.fishfamily{
-            width:40%; height: 170px;
-           }
-.fishfamily span{ font-weight: bold; 
-                  color: gray;
-  }
-
-.Simmons{
-         width:40%;}
-
-.Simmons span{ font-weight: bold; 
-                  color: gray;
-  }
-
-
-.newsletter{display: flex;
-            flex-direction: row;
-            justifty-content: space-between;
-            align-items: center;
-           background-color: #DCE0E3;
-           gap: 10px;}
-
-h3{ width: 50%; 
+    width: 100%;
     text-align: center;
-  color: white;}
-
-.submitbtn{ background-color: #66768A;
-  height: 36px;
-       width: 100px;}
-
-footer{ width: 100%;
-        background-color: #66768A;
-        color: white;
-}
- footer li a{color: white;}
-.footertop{
-border-bottom: 2px solid white;
-           padding-top: 20px;
-             display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.footertop span{ color: white;
-                  font-weight: 900;
-                 margin-left:50px;
-                }
-.footertopnav nav ul{
-                     width: 40%;
-                display: flex;
-               flex-direction: row;
-                   gap: 15px;
-                     margin-right: 50px;}
+.whoweare {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
-.footerbottomleft{ width: 50%; display: flex;
-                  flex-direction: row;
-                 
-               }
+.whoweare span {
+    font-weight: bold;
+}
+
+.whoweareimg {
+    width: 20%;
+}
+
+.whoweareimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.whowearep {
+    width: 40%;
+}
+
+
+/* =========================
+   FAMILY AND FOUNDATION
+========================= */
+
+.familyandfoundation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.fishfamily {
+    width: 40%;
+    min-height: 170px;
+}
+
+.Simmons {
+    width: 40%;
+}
+
+.fishfamily span,
+.Simmons span {
+    font-weight: bold;
+    color: gray;
+}
+
+
+/* =========================
+   NEWSLETTER SECTION
+========================= */
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCE0E3;
+    gap: 10px;
+    padding: 30px 20px;
+}
+
+.newsletter h3 {
+    color: #151F2B;
+}
+
+.submitbtn {
+    background-color: #66768A;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+    background-color: #66768A;
+    color: white;
+}
+
+footer li a {
+    color: white;
+}
+
+/* FOOTER TOP */
+
+.footertop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid white;
+    padding: 20px 50px;
+}
+
+.footertop span {
+    color: white;
+    font-weight: 900;
+    margin: 0;
+}
+
+/* TOP RIGHT NAVIGATION */
+
+.footertopnav {
+    margin-left: auto;
+}
+
+.footertopnav nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* FOOTER BOTTOM */
 
 .footerbottom {
-  width: 100%;
-    display: flex;
-   flex-direction: row;
-              justify-content: space-between;
-  align-items: flex-start;
-gap: 100px;
-  margin-left: 10px;
-}
-
-
-
-.footerbottomleft nav ul {
-width: 50%;
-  display: flex;
-  flex-direction: column;
- 
-}
-
-.footerbottomleft1, .footerbottomleft2, .footerbottomleft3 { 
-  width: 33%;
-}
-.footerbottomleft1 span {font-weight: 900;color: white;}
-.footerbottomleft2 span {font-weight: 900;color: white;}
-.footerbottomleft3 span {font-weight: 900;color: white;}
-
-.footerbottomright{
-  width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: auto;
-                   
+    gap: 20px;
+
+    padding: 20px 50px;
+    margin: 0;
 }
 
-.footerbottomright nav ul{
-                          width: 40%
-                display: flex;
-               flex-direction: row;
-                   gap: 15px;
-                     margin-right: 50px;}
+/* FOOTER BOTTOM LEFT */
+
+.footerbottomleft {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footerbottomleft1,
+.footerbottomleft2,
+.footerbottomleft3 {
+    width: 33.33%;
+}
+
+.footerbottomleft1 span,
+.footerbottomleft2 span,
+.footerbottomleft3 span {
+    font-weight: 900;
+    color: white;
+}
+
+.footerbottomleft nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* FOOTER BOTTOM RIGHT */
+
+.footerbottomright {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.footerbottomright nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 
-@media (max-width: 1024px) .herosection1, .herosection2 {
-    width: 60%;
-  }.history {width: 40%;
-  }
-.ourhistoryphotos {
-    width: 40%;
-  }.whowearep {
-    width: 50%;  }
+/* =========================
+   TABLET RESPONSIVE
+   1024px AND BELOW
+========================= */
+
+@media (max-width: 1024px) {
+
+    .herosection1,
+    .herosection2 {
+        width: 60%;
+    }
+
+    .history {
+        width: 40%;
+    }
+
+    .ourhistoryphotos {
+        width: 40%;
+    }
+
+    .whowearep {
+        width: 50%;
+    }
+
+    .empowering h2 {
+        width: 70%;
+    }
+
+    .footerbottom {
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   600px AND BELOW
+========================= */
 
 @media (max-width: 600px) {
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;}
+    /* NAVIGATION */
 
-  .navbtn { margin-right: 0;}
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
 
-  .hero { padding-top: 30px;}
-.herosection1, .herosection2 {
-    width: 90%;
-    margin-left: 10px;}
-.herosection1 {
-    margin-top: 50px;
-  }
+    .navbtn {
+        margin-right: 0;
+    }
 
-  h1 {font-size: 22px;}
+    /* HERO */
 
-  h2 { width: 90%;}
+    .hero {
+        padding-top: 30px;
+    }
 
-  form { flex-direction: column;}
+    .herosection1,
+    .herosection2 {
+        width: 90%;
+        margin-left: 10px;
+    }
 
-  .empoweringbottom { flex-direction: column;
-    align-items: center;}
+    .herosection1 {
+        margin-top: 50px;
+    }
 
-  .empoweringp1,
-  .empoweringp2 {width: 90%;
-  }
+    h1 {
+        font-size: 22px;
+    }
 
-  .ourhistory {flex-direction: column;}
+    h2 {
+        width: 90%;
+    }
 
-  .history,
-  .ourhistoryphotos { width: 90%;}
+    form {
+        flex-direction: column;
+    }
 
-  .ourhistoryphotos img { width: 100%;
-    height: auto;}
+    input {
+        max-width: 100%;
+    }
 
-  .whoweare {
-    flex-direction: column;}
+    /* EMPOWERING */
 
-  .whoweareimg, .whowearep {width: 90%;}
+    .empowering {
+        min-height: auto;
+        padding: 60px 20px;
+    }
 
-  .familyandfoundation {display: flex;flex-direction: column;}
+    .empowering h2 {
+        width: 100%;
+    }
 
-  .fishfamily, .Simmons {width: 90%;}
+    .empoweringbottom {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .newsletter {display: flex; flex-direction: column;}
+    .empoweringp1,
+    .empoweringp2 {
+        width: 90%;
+        height: auto;
+    }
 
-  .footertop {display: flex;
-    flex-direction: column;
-  }
-.footerbottom {display: flex;
-    flex-direction: column;
- 
-  }
+    .boston {
+        width: 90%;
+    }
 
-  .footerbottomleft,
-  .footerbottomright {
-    width: 100%;
-  }}
+    /* OUR STORY */
+
+    .ourstory {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .ourstory h2,
+    .ourstory p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* OUR HISTORY */
+
+    .ourhistory {
+        flex-direction: column;
+    }
+
+    .history,
+    .ourhistoryphotos {
+        width: 90%;
+    }
+
+    .history h2 {
+        text-align: center;
+    }
+
+    .ourhistoryphotos {
+        margin-top: 20px;
+    }
+
+    .ourhistoryphotos img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* WHO WE ARE */
+
+    .whoweare {
+        flex-direction: column;
+    }
+
+    .whoweareimg,
+    .whowearep {
+        width: 90%;
+    }
+
+    /* FAMILY AND FOUNDATION */
+
+    .familyandfoundation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fishfamily,
+    .Simmons {
+        width: 90%;
+        height: auto;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter h3 {
+        width: 100%;
+    }
+
+    /* FOOTER TOP */
+
+    .footertop {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footertopnav {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footertopnav nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* FOOTER BOTTOM */
+
+    .footerbottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .footerbottomleft {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footerbottomleft1,
+    .footerbottomleft2,
+    .footerbottomleft3 {
+        width: 33.33%;
+    }
+
+    .footerbottomright {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .footerbottomright nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
