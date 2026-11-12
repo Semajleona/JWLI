@@ -1,0 +1,338 @@
+*{border-box: box-sizing; text-decoration: none;}
+
+header{
+  width:100%;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  }
+ li a {
+   font-size: 14px; 
+   text-decoration: none;
+   color: #151F2B;
+ }
+.navbtn{border: 1px solid #151F2B;
+  width: 80px;
+        color: white;
+        background-color: #151F2B;
+  margin-right: 35px;
+}
+
+.hero{ background-image: url("/Untitled design _2_.png");
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-color: lightgray;
+       color: gray;
+       padding-top: 80px;
+
+     }
+
+.herosection1 { 
+ margin-top: 120px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+width: 50%;
+}
+  
+
+h1{ font-weight; normal;
+  font-size: 30px;
+  }
+h1,h2,h3{font-family: lato;}
+
+.herosection1 p{
+  font-size: 20px;
+}
+.herosection2 {  
+margin-left: 30px;
+  padding-bottom: 20px;
+width: 50%;}
+.herosection2 p{ 
+  font-size: 14px;}
+
+form{display: flex; gap: 10px;}
+input{ 
+  height: 30px;
+       width: 250px;}
+
+.herobtn{
+  height: 36px;
+       width: 100px;
+  float: left;
+}
+
+.empowering{ width: 100%;
+  display: flex;
+             flex-direction:column;
+             justify-content: center;
+             align-items: center;
+
+       color: #151F2B;     
+}
+
+
+
+h2{text-align: center;
+  width: 50%;
+    padding-bottom: 20px;
+ }
+
+.empoweringbottom{
+  display: flex;
+                  flex-direction:row;
+                  justify-content: center;
+  
+}
+
+.empoweringp1 { height: 100px;
+               width: 30%;
+ float: left;}
+
+.empoweringp1 span{
+  font-weight: bold;}
+
+.empoweringp2 span{
+  font-weight: bold;}
+
+.empoweringp2 { 
+  height: 100px;
+ width: 30%;
+ float: left;
+}
+
+.boston {width: 50%; 
+}
+
+.ourhistory{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #151F2B;
+ }
+
+.history h2{
+            text-align: left;
+  font-size: 20px; 
+  font-weight: bold;
+}
+.history {
+  width: 30%;
+}
+
+.ourhistoryphotos { margin-top:75px;
+  width: 30%; }
+
+figcaption{text-align: center;}
+
+
+.ourhistoryphotos img{ height: 250px;
+                      width: 320px;}
+
+
+.whowearesection{width: 100%;
+                 padding-top: 70px; 
+                }
+
+.whowearesection h2 {
+  text-align: center;
+}
+ 
+.whoweare {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.whoweare span{font-weight:bold;}
+
+
+.whoweareimg{ width: 20%;}
+.whowearep{width: 40%;}
+
+.familyandfoundation{ display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                      align-content: center;
+                      gap: 20px;
+                      padding-top: 30px;
+                    }
+
+
+
+.fishfamily{
+            width:40%; height: 170px;
+           }
+.fishfamily span{ font-weight: bold; 
+                  color: gray;
+  }
+
+.Simmons{
+         width:40%;}
+
+.Simmons span{ font-weight: bold; 
+                  color: gray;
+  }
+
+
+.newsletter{display: flex;
+            flex-direction: row;
+            justifty-content: space-between;
+            align-items: center;
+           background-color: #DCE0E3;
+           gap: 10px;}
+
+h3{ width: 50%; 
+    text-align: center;
+  color: white;}
+
+.submitbtn{ background-color: #66768A;
+  height: 36px;
+       width: 100px;}
+
+footer{ width: 100%;
+        background-color: #66768A;
+        color: white;
+}
+ footer li a{color: white;}
+.footertop{
+border-bottom: 2px solid white;
+           padding-top: 20px;
+             display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footertop span{ color: white;
+                  font-weight: 900;
+                 margin-left:50px;
+                }
+.footertopnav nav ul{
+                     width: 40%;
+                display: flex;
+               flex-direction: row;
+                   gap: 15px;
+                     margin-right: 50px;}
+
+.footerbottomleft{ width: 50%; display: flex;
+                  flex-direction: row;
+                 
+               }
+
+.footerbottom {
+  width: 100%;
+    display: flex;
+   flex-direction: row;
+              justify-content: space-between;
+  align-items: flex-start;
+gap: 100px;
+  margin-left: 10px;
+}
+
+
+
+.footerbottomleft nav ul {
+width: 50%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.footerbottomleft1, .footerbottomleft2, .footerbottomleft3 { 
+  width: 33%;
+}
+.footerbottomleft1 span {font-weight: 900;color: white;}
+.footerbottomleft2 span {font-weight: 900;color: white;}
+.footerbottomleft3 span {font-weight: 900;color: white;}
+
+.footerbottomright{width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.footerbottomright nav ul{
+                          width: 40%
+                display: flex;
+               flex-direction: row;
+                   gap: 15px;
+                     margin-right: 50px;}
+
+
+@media (max-width: 1024px) .herosection1, .herosection2 {
+    width: 60%;
+  }.history {width: 40%;
+  }
+.ourhistoryphotos {
+    width: 40%;
+  }.whowearep {
+    width: 50%;  }
+
+@media (max-width: 600px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;}
+
+  .navbtn { margin-right: 0;}
+
+  .hero { padding-top: 30px;}
+.herosection1, .herosection2 {
+    width: 90%;
+    margin-left: 10px;}
+.herosection1 {
+    margin-top: 50px;
+  }
+
+  h1 {font-size: 22px;}
+
+  h2 { width: 90%;}
+
+  form { flex-direction: column;}
+
+  .empoweringbottom { flex-direction: column;
+    align-items: center;}
+
+  .empoweringp1,
+  .empoweringp2 {width: 90%;
+  }
+
+  .ourhistory {flex-direction: column;}
+
+  .history,
+  .ourhistoryphotos { width: 90%;}
+
+  .ourhistoryphotos img { width: 100%;
+    height: auto;}
+
+  .whoweare {
+    flex-direction: column;}
+
+  .whoweareimg, .whowearep {width: 90%;}
+
+  .familyandfoundation {display: flex;flex-direction: column;}
+
+  .fishfamily, .Simmons {width: 90%;}
+
+  .newsletter {display: flex; flex-direction: column;}
+
+  .footertop {display: flex;
+    flex-direction: column;
+  }
+.footerbottom {display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .footerbottomleft,
+  .footerbottomright {
+    width: 100%;
+  }}
