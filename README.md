@@ -1,4 +1,5 @@
 <img width="1384" height="758" alt="Screenshot 2026-11-14 at 7 51 00 PM" src="https://github.com/user-attachments/assets/ed5717a2-07f8-4442-b863-04165667536d" />
+https://empoweringjapanesewomanleadership.netlify.app/
 
 # Japanese Women's Leadership Initiative (JWLI)
 
